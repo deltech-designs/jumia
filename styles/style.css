@@ -1,0 +1,456 @@
+
+
+@import 'components.css';
+
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#header {
+     width: 100%;
+     height: 40px;
+     background-color: var(--clr-purple);
+     background-image: url("../Assets/TW-save-the-date-top-strip.gif");
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position-x: center;
+      /* padding: 0 9rem; */
+
+}
+
+
+.semi-header{
+     background-color: #f2f2f2;
+     width: auto;
+     height: 3vw;
+     display: flex;
+     justify-content: space-around;
+     padding: 0px 6.5rem;
+}
+
+.navbar{
+     width: 100vw;
+     height: 10vh;
+     background-color: #ffffff;
+     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.4);
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     /* margin-bottom: 1rem; */
+     /* padding: .5rem; */
+     /* position: fixed; */
+}
+
+.input input[type=text]{
+     width: 30vw;
+     outline: none;
+     border: 1px solid #c0c0c0;
+     padding: 8px 0px  10px 40px;
+     border-radius: 4px; 
+     background-image: url('../image/search-icon-png-9985.png');
+     background-size: 20px 20px; 
+     background-color: white;
+     background-position: 10px 10px;
+     background-repeat: no-repeat;
+
+}
+
+.input-btn{
+     background-color: #ff5000;
+     border: none;
+     padding: .5rem 1rem;
+     border-radius: 3px;
+     color: #ffffff;
+     transition:  .5s;
+     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.input-btn:hover{
+     opacity: 3;
+     background-color: #ff7000;
+}
+
+.nav_link a {
+     padding: 3px;
+}
+ .nav_link {
+     padding-right: 37px;
+}
+
+.nav_link a{
+     color: black;
+     text-decoration: none;
+     font-weight: 500;
+
+}
+
+.navbar .nav_link a:hover{
+     color: #ff8000;
+}
+
+
+
+.main-container{
+   background-color: #f0f0f0;
+}
+
+
+.inner-container {
+     max-width: 1200px;
+     margin: auto;
+}
+
+.landing_page{
+     display: grid;
+     grid-template-columns: 1.5fr 6.5fr 2fr;
+     gap: 1rem;
+     margin-bottom: 1rem;
+     padding-top: .7rem;
+}    
+
+#aside {
+     background-color: #ffffff;
+     display: flex;
+     flex-direction: column;
+     border-radius: 4px;
+     width: 15vw;
+     height:auto;
+     padding: .5rem 1rem;
+     /* box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5); */
+     /* margin-left: 10rem; */
+}
+
+#aside:hover {
+     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
+}
+
+#aside a, i {
+     /* font-size: 14px; */
+     text-decoration: none;
+     color: black;
+     transition: all .1s;
+}
+
+#aside i {
+     padding-top: .3rem;
+}
+#aside a:hover, i:hover{
+     color: #ff5500;
+}
+
+i {
+     /* padding: 6px; */
+     color: #000000;
+}
+
+.landing_center img{
+     border-radius: 4px;
+     margin: 0 .5rem;
+     width: 55vw;
+     height: 20rem;
+}
+
+ .landing_left div{ 
+     width: 35;
+     border-radius: 10px;
+} 
+
+.left_top img{
+     width: 11.5rem;
+     border-radius: 4px;
+}
+
+
+.slide_tip{
+     display: flex;
+     justify-content: space-between;
+}
+
+.slide_tip{
+     background-color: #ffffff;
+     width: 17rem;
+     /* margin-top: 10px; */
+}
+
+.slide_inner{
+     margin-right: 1rem;
+}
+
+.slide_inner .free{
+     display: flex;
+     flex-direction: row;
+     background-color: #ffffff;
+     color: black;
+     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+     padding: 8px;
+     width: 18rem;
+     font-weight: 500;
+     border-radius: 8px;
+     margin-bottom: 10px;
+}
+
+.free > a {
+     margin: 0.5rem 0 0 8px;
+     text-decoration: none;
+     color: #000000;
+} 
+
+/* Flash Section */
+.flash-header{
+     display: flex;
+     justify-content: space-between;
+     background-color: red;
+     color: white;
+     border-radius: 5px 5px 0px 0px;
+     padding: 1rem;
+     font-weight: 500;
+     font-size: 18px;
+}
+
+
+#flash-innerImg{
+     margin-bottom: 1rem;
+     background-color: white;
+     display: grid;
+     gap: .5rem;
+     grid-template-columns: repeat(6,auto);
+     padding: 1rem;
+}
+
+/* #flash-innerImg:hover  img:hover{
+     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+
+} */
+
+#img-container img {
+     width: 170px;
+     border-radius: 4px;
+    
+}
+
+#img-container{
+     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+} 
+
+.flash{
+     padding: .5rem;
+}
+
+.flash:hover{
+     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+     transition: all .2s;
+     width: 175px;
+
+}
+/* ends of Flash section */
+
+
+
+/* Don't Miss Out On These Offers!!! */
+
+/* .dontmiss{
+     background-color: #ffffff;
+     border-radius: 4px;
+} */
+
+.dontmiss-title, .collection-title{
+     background-color: white;
+     color: black;
+     border-radius: 5px 5px 0px 0px;
+     padding: 1rem;
+     font-weight: 600;
+     font-size: 20px;
+     text-align: center;
+
+}
+
+.dontmiss-1, .dontmiss-2{
+     display: flex;
+     padding:  1rem;
+     background: #ffffff;
+     border-radius: 5px;
+     margin-bottom: 1rem;
+}
+
+
+.dontmiss-1 img, .dontmiss-2 img{
+     border-radius: 5px;
+    margin: .5rem;
+}
+
+.dontmiss-1 img:hover, .dontmiss-2 img:hover{
+     width: 60rem;
+     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+}
+/* endDon't Miss Out On These Offers!!! */
+
+
+
+/* Top Deal  */
+.topdeal-top{
+     background-color: black;
+     color: white;
+     padding: 1rem;
+     font-size: 18px;
+     font-weight: 600;
+     display: flex;
+     justify-content: space-between;
+     border-radius: 5px 5px 0px 0px;
+}
+
+
+
+#topdealImg_container{
+     display: grid;
+     grid-template-columns: repeat(6,auto);
+     gap: .5rem;
+     background-color: white;
+     border-radius: 4px;
+     padding: 1rem;
+     margin-bottom: 1rem;
+}
+
+
+#topdealImg_container img{
+     width: 170px;
+     border-radius: 3px;
+     padding: .5rem;
+}
+/* 
+.topdeal{
+     padding: .5rem;
+} */
+.topdeal:hover{
+     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+     transition: all .2s;
+     width: 195px;
+}
+/* ends Top Deal  */
+
+
+/* Shop From Our Collection Now! */
+
+.collection-heaader{
+    background-color: white;
+}
+
+.collection-img{
+     /* display: grid;
+     grid-template-columns: repeat(6,auto);
+     background-color: white;
+     border-radius: 4px;
+     padding: 1rem;
+     margin-bottom: 1rem; */
+}
+
+#collection-gallery{
+     background-color: white;
+     display: grid;
+     grid-template-columns: repeat(6,auto);
+     gap: .3rem;
+     border-radius: 4px;
+     padding: 1rem;
+     margin-bottom: 1rem;
+}
+
+#collection-gallery a img{
+   width: 180px;
+   /* padding: .5rem; */
+}
+
+.link_container{
+     padding: .2rem;
+}
+
+.link_container:hover{
+     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+     transition: all .2s;
+     width: 190px;
+}
+/* ends Shop From Our Collection Now! */
+
+/* The Budget Store  */
+.budget-title{
+     background-color: rgb(253, 214, 253);
+     color: black;
+     border-radius: 5px 5px 0px 0px;
+     padding: 1rem;
+     font-weight: 600;
+     font-size: 20px;
+     text-align: center
+}
+
+
+.budget-img{
+     display: flex;
+     padding:  1rem;
+     background: #ffffff;
+     border-radius: 5px;
+     margin-bottom: 1rem; 
+}
+
+.budget-img img{
+     border-radius: 5px;
+    margin: .5rem;
+}
+
+.budget-img img:hover{
+     width: 60rem;
+     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+}
+/* ends The Budget Store  */
+
+
+/* Top Categories | The Budget Store Section */
+.budgetstore-title{
+     background-color: rgb(253, 214, 253);
+     color: black;
+     border-radius: 5px 5px 0px 0px;
+     padding: 1rem;
+     font-weight: 600;
+     font-size: 20px;
+     text-align: center
+}
+
+
+#budgetstore-gallery{
+     background-color: white;
+     display: grid;
+     grid-template-columns: repeat(6,auto);
+     gap: .2rem;
+     border-radius: 4px;
+     padding: 1rem;
+     margin-bottom: 1rem;
+}
+
+#budgetstore-gallery img{
+   width: 160px;
+}
+
+/* .budgetstores{
+     padding: .5rem;
+} */
+.budgetstores:hover{
+     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+     transition: all .2s;
+     width: 190px;
+}
+/* ends Top Categories | The Budget Store Section */
+
+
+/* Top Deals | The Budget Store */
+
+.budtopdeal-top{
+     background-color: rgb(253, 214, 253);
+     display: flex;
+     justify-content: space-between;
+}
+
+.budtopdeal-container{
+     display: grid;
+     grid-template-columns: repeat(6,auto);
+     
+}
